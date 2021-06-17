@@ -1,0 +1,55 @@
+version: '3'
+
+networks: 
+    laravel:
+        driver: bridge
+
+services: 
+    nginx:
+        image: nginx:alpine
+        container_name: nginx
+        restart: unless-stopped
+        tty: true
+        ports:
+            - "8001:8001"
+        volumes: 
+            - ./src:/var/www/laraveldocker
+            - ./nginx/default.conf:/etc/nginx/conf.d/default.conf
+        depends_on: 
+            - php
+            - mysql
+        networks: 
+            - laravel
+
+    mysql:
+        image: mysql:8.0
+        container_name: mysql
+        restart: unless-stopped
+        tty: true
+        ports: 
+            - "4306:3306"
+        volumes: 
+            - ./mysql:/var/lib/mysql
+        environment: 
+            MYSQL_DATABASE: laravel_docker
+            MYSQL_USER: user
+            MYSQL_PASSWORD: user
+            SERVICE_TAGS: dev
+            SERVICE_NAME: mysql
+        networks: 
+            - laravel
+
+    php:
+        build:
+            context: .
+            dockerfile: Dockerfile
+        container_name: php
+        restart: unless-stopped
+        tty: true
+        working_dir: /var/www/laraveldocker
+        volumes: 
+            - ./src:/var/www/laraveldocker
+        ports: 
+            - "9000:9000"
+        networks: 
+            - laravel
