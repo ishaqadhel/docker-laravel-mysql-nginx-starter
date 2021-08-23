@@ -4,6 +4,7 @@ Create a Local Laravel Development Environment with Docker.
 
 ## Steps to prepare development environment
 
+- Install Composer on your local
 - Create mysql folder on this root repo
 - Run command ```docker-compose build``` on your terminal
 - Run command ```docker-compose up -d``` on your terminal
