@@ -33,7 +33,7 @@ Create a Laravel, MySQL, Nginx Environment with Docker.
 ## 📚 Steps to prepare development environment
 
 - Install Composer on your local (https://getcomposer.org/)
-- Create .env file on src folder for laravel environment from .env.example
+- Create .env file for laravel environment from .env.example on src folder
 - Run command ```docker-compose build``` on your terminal
 - Run command ```docker-compose up -d``` on your terminal
 - Run command ```composer install``` on src folder
