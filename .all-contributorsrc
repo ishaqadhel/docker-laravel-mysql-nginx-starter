@@ -15,6 +15,16 @@
         "infra",
         "doc"
       ]
+    },
+    {
+      "login": "franszhafran",
+      "name": "Muhammad Zhafran",
+      "avatar_url": "https://avatars.githubusercontent.com/u/49693862?v=4",
+      "profile": "https://github.com/franszhafran",
+      "contributions": [
+        "code",
+        "infra"
+      ]
     }
   ],
   "contributorsPerLine": 7,
