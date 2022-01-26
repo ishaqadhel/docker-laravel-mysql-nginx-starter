@@ -1,0 +1,10 @@
+# https://github.com/robvanderleek/create-issue-branch#option-2-configure-github-action
+
+# ex: i4-lower-camel-upper
+branchName: 'i${issue.number}-${issue.title,}'
+gitSafeReplacementChar: '-'
+branches:
+  - label: epic
+    skip: true
+  - label: debt
+    skip: true
