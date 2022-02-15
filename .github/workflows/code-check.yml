@@ -2,6 +2,10 @@ name: Code Check
 
 on:
   - push
+  
+defaults:
+ run:
+  working-directory: ./src
 
 jobs:
   prettier:
@@ -12,5 +16,4 @@ jobs:
       - uses: actions/setup-node@v2
         with:
           node-version: '14'
-        working-directory: ./src
       - run: npm run format:check
