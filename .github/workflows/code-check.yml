@@ -12,4 +12,5 @@ jobs:
       - uses: actions/setup-node@v2
         with:
           node-version: '14'
-      - run: npm run format
+      - run: cd src
+      - run: npm run format:check
