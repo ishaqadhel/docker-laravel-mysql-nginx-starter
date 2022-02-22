@@ -1,6 +1,3 @@
 /node_modules
 /storage
-/vendor
-
-composer.lock
-package-lock.json
+/vendor 
