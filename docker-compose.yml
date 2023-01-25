@@ -22,6 +22,7 @@ services:
             - laravel
 
     mysql:
+        platform: linux/amd64
         image: mysql
         container_name: mysql
         restart: unless-stopped
