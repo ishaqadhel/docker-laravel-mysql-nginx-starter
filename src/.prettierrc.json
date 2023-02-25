@@ -1,6 +1,6 @@
 {
-    "phpVersion": "8.0",
-    "printWidth": 80,
+    "phpVersion": "8.1",
+    "printWidth": 145,
     "tabWidth": 4,
     "useTabs": false,
     "singleQuote": false,

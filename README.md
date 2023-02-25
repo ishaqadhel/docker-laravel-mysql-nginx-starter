@@ -23,15 +23,13 @@
 * [Docker](https://www.docker.com/)
 * [Dockerfile with Alpine](https://hub.docker.com/_/alpine)
 * [Nginx](https://www.nginx.com)
-* [Laravel 9](https://laravel.com/)
-* [MySQL 8](https://www.mysql.com/)
-* [PHP 8](https://nodejs.org)
-* [Node 16](https://nodejs.org)
-* [NPM 8](https://www.npmjs.com)
+* [Laravel 10](https://laravel.com/)
+* [MySQL](https://www.mysql.com/)
+* [PHP 8.2](https://nodejs.org)
+* [Node](https://nodejs.org)
+* [NPM](https://www.npmjs.com)
 * [PHP Prettier](https://github.com/prettier/plugin-php)
-* [Github Action Issue Branch](https://github.com/apps/create-issue-branch)
 * [Github Action Check Code Format Using Prettier](https://github.com/ishaqadhel/docker-laravel-mysql-nginx-starter/actions)
-* [Github Action Issue Autolink On Pull Request](https://github.com/ishaqadhel/docker-laravel-mysql-nginx-starter/actions)
 
 <!-- GETTING STARTED -->
 ## Getting Started
