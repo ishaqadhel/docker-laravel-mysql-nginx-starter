@@ -47,7 +47,21 @@ Follow the instruction below to setting up your project.
 ![image](https://user-images.githubusercontent.com/49280352/156305925-c7e3f2f2-c458-4b0b-ad1c-32fcaec50e1d.png)
 
 <!-- USAGE EXAMPLES -->
-## Usage
+## Run App With GNU Make (UNIX Based OS: MacOS, Linux)
+
+- `make run-app-with-setup` : build docker and start all docker container with laravel setup
+- `make run-app-with-setup-db` : build docker and start all docker container with laravel setup + database migration and seeder
+- `make run-app` : start all docker container
+- `make kill-app` : kill all docker container
+- `make enter-nginx-container` : enter docker nginx container
+- `make enter-php-container` : enter docker php container
+- `make enter-mysql-container` : enter docker mysql container
+- `make flush-db` : run php migrate fresh command
+- `make flush-db-with-seeding` : run php migrate fresh command with seeding
+
+
+<!-- USAGE EXAMPLES -->
+## Run App Manually
 
 ![preview-docker-laravel](https://user-images.githubusercontent.com/49280352/131224609-401fcd2b-a815-49f2-8164-b6d9b77df87c.gif)
 
