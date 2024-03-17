@@ -2,13 +2,13 @@ run-app-with-setup:
 	cp ./src/.env.example ./src/.env
 	docker compose build
 	docker compose up -d
-	docker exec php /bin/sh -c "composer install && chmod -R 777 storage && php artisan key:generate"
+	docker exec php /bin/sh -c "composer install && npm install && chmod -R 777 storage && php artisan key:generate"
 
 run-app-with-setup-db:
 	cp ./src/.env.example ./src/.env
 	docker compose build
 	docker compose up -d
-	docker exec php /bin/sh -c "composer install && chmod -R 777 storage && php artisan key:generate && php artisan migrate:fresh --seed"
+	docker exec php /bin/sh -c "composer install && npm install && chmod -R 777 storage && php artisan key:generate && php artisan migrate:fresh --seed"
 
 run-app:
 	docker compose up -d
@@ -30,3 +30,9 @@ flush-db:
 
 flush-db-with-seeding:
 	docker exec php /bin/sh -c "php artisan migrate:fresh --seed"
+
+code-format-check:
+	docker exec php /bin/sh -c "npm run format:check"
+
+code-format:
+	docker exec php /bin/sh -c "npm run format"
