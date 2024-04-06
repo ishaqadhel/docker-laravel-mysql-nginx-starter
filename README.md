@@ -1,7 +1,7 @@
 <!-- PROJECT LOGO -->
 <br />
 <div align="center">
-  <img src="https://github.com/ishaqadhel/docker-laravel-mysql-nginx-starter/assets/49280352/679370ac-2b69-4897-9df8-0c8cd3445cdb" alt="cover" align="center">
+  <img src="https://github.com/ishaqadhel/docker-laravel-mysql-nginx-starter/assets/49280352/cb88bac9-2517-41fe-805e-b81423e64eca" alt="cover" align="center">
   <h3 align="center">Docker Laravel MySQL Nginx Starter</h3>
   <p align="center">
     Project Starter For Web Application Development with Laravel, MySQL, Nginx, and Docker.
@@ -29,7 +29,8 @@
 * [Node](https://nodejs.org)
 * [NPM](https://www.npmjs.com)
 * [PHP Prettier](https://github.com/prettier/plugin-php)
-* [Github Action Check Code Format Using Prettier](https://github.com/ishaqadhel/docker-laravel-mysql-nginx-starter/actions)
+* [Github Action To Run Prettier Check](https://github.com/ishaqadhel/docker-laravel-mysql-nginx-starter/actions)
+* [Github Action To Run PHP Unit Test](https://github.com/ishaqadhel/docker-laravel-mysql-nginx-starter/actions)
 
 <!-- GETTING STARTED -->
 ## Getting Started
@@ -60,6 +61,7 @@ Follow the instructions below to set up your project.
 - `make flush-db-with-seeding` : run php migrate fresh command with seeding
 - `make code-format-check` : run npm command to run prettier to check your code
 - `make code-format`: run npm command to run prettier to format your code
+- `make code-test`: run php artisan test command
 
 <!-- USAGE EXAMPLES -->
 ## Run App Manually
@@ -82,6 +84,7 @@ Follow the instructions below to set up your project.
 - Check the summary of new features in Laravel 11 [here](https://laraveldaily.com/post/laravel-11-main-new-features-changes) or on the official page [here](https://laravel.com/docs/11.x/releases).
 - Right now, I will postpone upgrading to PHP 8.3 because the PHP Plugin in Prettier is not supported yet. [Check the issues here](https://github.com/prettier/plugin-php/issues/2299).
 - Don't forget to run ```npm run format``` inside your php container or run ```make code-format``` before you push your code.
+- Don't forget to run ```php artisan test``` inside your php container or run ```make code-test``` before you push your code.
 
 <!-- MARKDOWN LINKS & IMAGES -->
 <!-- https://www.markdownguide.org/basic-syntax/#reference-style-links -->
