@@ -36,3 +36,6 @@ code-format-check:
 
 code-format:
 	docker exec php /bin/sh -c "npm run format"
+
+code-test:
+	docker exec php /bin/sh -c "php artisan test"
